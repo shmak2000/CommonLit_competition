@@ -8,12 +8,15 @@ Notebooks for training LLMs on competition dataset + for evaluating</br>
 For each model I provide a resulting figures for model's CV with train and test values. Validation on test data took place every 10-30 batches.</br>
    - _RoBERTa base-uncased model_</br>
      
-   ![Roberta base CV](https://github.com/shmak2000/CommonLit_competition/assets/109681522/a1a28434-ba1e-4694-8bd2-45b2678cb848)
+   <img src="https://github.com/shmak2000/CommonLit_competition/assets/109681522/a1a28434-ba1e-4694-8bd2-45b2678cb848" width="700">
 
    - _RoBERTa large-uncased-model_</br>
-   
-   ![Roberta large CV](https://github.com/shmak2000/CommonLit_competition/assets/109681522/004c3a71-c0eb-477d-bbb3-000eaddf3cbd)
+
+   <img src="https://github.com/shmak2000/CommonLit_competition/assets/109681522/004c3a71-c0eb-477d-bbb3-000eaddf3cbd" width="700">
 
    - DeBERTa base model</br>
+
+   <img src="https://github.com/shmak2000/CommonLit_competition/assets/109681522/32c03c9f-2139-405f-8976-27c2368c95fd" width="700">
+
    - DeBERTa large model</br>
 ......
