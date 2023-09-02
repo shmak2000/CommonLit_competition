@@ -1,7 +1,8 @@
-# CommonLit - Evaluate Student Summaries competition
+# CommonLit - Evaluate Student Summaries
 
-[Kaggle competition](https://www.kaggle.com/competitions/commonlit-evaluate-student-summaries?rvi=1)</br>
-Notebooks for training LLMs on competition dataset + for evaluating</br>
+The data is taken from [kaggle competition](https://www.kaggle.com/competitions/commonlit-evaluate-student-summaries?rvi=1)</br>
+The goal is to assess the quality of students summaries by estimating two scores - *wording* and *content*.</br>
+
 1. For **Evaluation** i'm using 4-fold CV, with folds, based on summarie's themes, so the model is tested on theme, which it has never seen.
 2. **Architecture** - different LLM's with mean pooling of the last hidden layer. Pooled vector is the concateneted with text features, which I found, have the biggest correlation with scores - number of unique words, number of sentences, cosine simularity of the summary and prompt text etc. Then there is a self attention layer and fully connected regressor.
 3. **USED MODELS** - 
