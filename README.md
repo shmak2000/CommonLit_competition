@@ -4,20 +4,20 @@ The data is taken from [kaggle competition](https://www.kaggle.com/competitions/
 The goal is to assess the quality of students summaries by estimating two scores - *wording* and *content*.</br>
 
 1. For **Evaluation** i'm using 4-fold CV, with folds, based on summarie's themes, so the model is tested on theme, which it has never seen.
-2. **Architecture** - different LLM's with mean pooling of the last hidden layer. Pooled vector is the concateneted with text features, which I found, have the biggest correlation with scores - number of unique words, number of sentences, cosine simularity of the summary and prompt text etc. Then there is a self attention layer and fully connected regressor.
+2. **Architecture** - different LLM's with mean pooling of the last hidden layer. Pooled vector is then concateneted with extracted text features, which have the biggest correlation with scores - number of unique words, number of sentences, cosine simularity of the summary and prompt text etc. Then there is a self attention layer and fully connected regressor.
 3. **USED MODELS** - 
-For each model I provide a resulting figures for model's CV with train and test values. Validation on test data took place every 10-30 batches.</br>
-   - _RoBERTa base-uncased model_</br>
+For each model I provide a resulting plot for model's CV with train and test values. Validation on test data took place every 10-30 batches.</br>
+   - RoBERTa large-uncased model</br>
      
-   <img src="https://github.com/shmak2000/CommonLit_competition/assets/109681522/a1a28434-ba1e-4694-8bd2-45b2678cb848" width="700">
+   <img src="https://github.com/shmak2000/CommonLit_competition/assets/109681522/e029db07-74cc-433f-8136-0212c132a0bb"
+ width="700">
 
-   - _RoBERTa large-uncased-model_</br>
+   - BART-base-model</br>
 
-   <img src="https://github.com/shmak2000/CommonLit_competition/assets/109681522/004c3a71-c0eb-477d-bbb3-000eaddf3cbd" width="700">
+   <img src="https://github.com/shmak2000/CommonLit_competition/assets/109681522/828f821f-206a-4eba-b589-abbfe6e1e778" width="700"></br>
 
    - DeBERTa base model</br>
 
-   <img src="https://github.com/shmak2000/CommonLit_competition/assets/109681522/32c03c9f-2139-405f-8976-27c2368c95fd" width="700">
+   <img src="https://github.com/shmak2000/CommonLit_competition/assets/109681522/5f028d37-621d-4038-b943-2fac86b6883e" width="700"></br>
 
-   - DeBERTa large model</br>
-......
+Here, I got the best results with RoBERTa model trained for 3 epochs
